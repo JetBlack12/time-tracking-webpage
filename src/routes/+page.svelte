@@ -21,15 +21,6 @@
         </div>
       </div>
       <div class="flex flex-col items-start justify-center pl-[2rem] gap-[0.5rem] bg-dark-blue dark:bg-slate-500 h-[11rem] relative top-[-1.75rem] pt-[0.75rem] rounded-[13px]">
-        <!-- <button class="font-RubikRegular border-transparent outline-none btn text-des-blue dark:text-gray-800 dark:hover:text-white dark:focus:text-white dark:active:text-white hover:text-white active:text-white focus:text-[17px] focus:text-white" on:click={() => updateTimeFrame("daily","Yesterday")}>
-          Daily
-        </button>
-        <button class="font-RubikRegular text-des-blue dark:text-gray-800 dark:hover:text-white dark:focus:text-white dark:active:text-white border-transparent outline-none  hover:text-white active:text-white focus:text-[17px] focus:text-white" on:click={() => updateTimeFrame("weekly","Last Week")}>
-          Weekly
-        </button>
-        <button class="font-RubikRegular text-des-blue dark:text-gray-800 dark:hover:text-white dark:focus:text-white dark:active:text-white border-transparent outline-none  hover:text-white active:text-white focus:text-[17px] focus:text-white" on:click={() => updateTimeFrame("monthly","Last Month")}>
-          Monthly
-        </button> -->
         {#each contents as content,i}
           {#if i === 0}
             <button class={className} on:click={() => updateTimeFrame(content.func1, content.func2)} autofocus>
@@ -78,9 +69,6 @@
   import exercise from "../icon-exercise.svg"
   import social from "../icon-social.svg"
   import selfcare from "../icon-self-care.svg"
-  let maybe = `autofocus`
-  // import sun from "../sun.svg"
-  // import moon from "../moon.svg"
   const className = "font-RubikRegular border-transparent outline-none btn text-des-blue dark:text-gray-800 dark:hover:text-white dark:focus:text-white dark:active:text-white hover:text-white active:text-white focus:text-[17px] focus:text-white"
   const contents = [
     {
